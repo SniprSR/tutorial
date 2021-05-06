@@ -1,13 +1,11 @@
 var element = document.getElementById("sidebar");
-var h4 = document.createElement("h4");
-var hOne = document.createTextNode("Contents");
-h4.appendChild(hOne);
-element.appendChild(h4);
 
 /* Create Elements */
+var h1 = document.createElement("h4");
 var a1 = document.createElement("a");
 var a2 = document.createElement("a");
 var a3 = document.createElement("a");
+var h2 = document.createElement("h4");
 var a4 = document.createElement("a");
 var a5 = document.createElement("a");
 var a6 = document.createElement("a");
@@ -18,12 +16,15 @@ var a10 = document.createElement("a");
 var a11 = document.createElement("a");
 var a12 = document.createElement("a");
 var a13 = document.createElement("a");
+var h3 = document.createElement("h4");
 var a14 = document.createElement("a");
 
 /* Add Text */
+var hOne = document.createTextNode("Getting Started:");
 var aOne = document.createTextNode("Introduction");
 var aTwo = document.createTextNode("Rules");
 var aThree = document.createTextNode("Movement / Mechanics");
+var hTwo = document.createTextNode("List of segments");
 var aFour = document.createTextNode("King Golem");
 var aFive = document.createTextNode("Meta Knight");
 var aSix = document.createTextNode("Moley");
@@ -34,6 +35,7 @@ var aTen = document.createTextNode("Kracko");
 var aEleven = document.createTextNode("Wiz");
 var aTwelve = document.createTextNode("Dark Mind I-III");
 var aThirteen = document.createTextNode("Dark Mind IV-VI");
+var hThree = document.createTextNode("More");
 var aFourteen = document.createTextNode("External Resources");
 
 /* Add Links */
@@ -95,9 +97,11 @@ a14.setAttributeNode(att14);
 
 
 /* Append Childs */
+h1.appendChild(hOne);
 a1.appendChild(aOne);
 a2.appendChild(aTwo);
 a3.appendChild(aThree);
+h2.appendChild(hTwo);
 a4.appendChild(aFour);
 a5.appendChild(aFive);
 a6.appendChild(aSix);
@@ -108,11 +112,14 @@ a10.appendChild(aTen);
 a11.appendChild(aEleven);
 a12.appendChild(aTwelve);
 a13.appendChild(aThirteen);
+h3.appendChild(hThree);
 a14.appendChild(aFourteen);
 
+element.appendChild(h1);
 element.appendChild(a1);
 element.appendChild(a2);
 element.appendChild(a3);
+element.appendChild(h2);
 element.appendChild(a4);
 element.appendChild(a5);
 element.appendChild(a6);
@@ -123,4 +130,5 @@ element.appendChild(a10);
 element.appendChild(a11);
 element.appendChild(a12);
 element.appendChild(a13);
+element.appendChild(h3);
 element.appendChild(a14);
